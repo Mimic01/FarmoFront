@@ -38,7 +38,7 @@ jobs:
         run: |
           echo "$SSH_KEY" > /tmp/deploy_key
           chmod 600 /tmp/deploy_key
-          rsync -avz --delete \
+          rsync -avz --delete --omit-dir-times \
             -e "ssh -i /tmp/deploy_key -o StrictHostKeyChecking=no" \
             dist/farmodental/browser/ \
             "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH/"
