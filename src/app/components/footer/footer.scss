@@ -1,0 +1,124 @@
+.footer {
+  background: var(--color-navy);
+  color: var(--color-white);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 80px 48px;
+  display: flex;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+
+/* ── Brand ── */
+.footer-brand {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+
+  span {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: -0.02em;
+  }
+}
+
+.footer-tagline {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.6;
+}
+
+/* ── Links / Contact columns ── */
+.footer-links,
+.footer-contact {
+  min-width: 160px;
+
+  h4 {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-teal);
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  li,
+  a {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  a {
+    text-decoration: none;
+    transition: color var(--transition);
+
+    &:hover {
+      color: var(--color-teal);
+    }
+  }
+}
+
+/* ── Bottom bar ── */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  p {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 24px;
+
+  a {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    transition: color var(--transition);
+
+    &:hover {
+      color: var(--color-teal);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 48px 32px 32px;
+    gap: 40px;
+  }
+
+  .footer-bottom {
+    padding: 20px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

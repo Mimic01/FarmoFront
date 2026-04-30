@@ -1,0 +1,44 @@
+<section id="products" class="products">
+  <div class="products-container">
+
+    <div class="section-header">
+      <p class="section-tag">Catálogo</p>
+      <h2>Nuestros Productos</h2>
+      <p class="section-sub">
+        Soluciones dentales de primera línea para profesionales exigentes.
+        Cada producto supera los estándares europeos de calidad y seguridad.
+      </p>
+    </div>
+
+    <div class="cards-row">
+
+      <!-- Card 1: Implante -->
+      <article class="product-card">
+        <div class="card-badge">{{ products[0].tag }}</div>
+        <canvas #canvas1 class="product-canvas" width="280" height="280"></canvas>
+        <h3 class="product-name">{{ products[0].name }}</h3>
+        <p class="product-desc">{{ products[0].description }}</p>
+        <button class="btn-outline">Ver más</button>
+      </article>
+
+      <!-- Card 2: Corona -->
+      <article class="product-card featured">
+        <div class="card-badge featured-badge">{{ products[1].tag }}</div>
+        <canvas #canvas2 class="product-canvas" width="280" height="280"></canvas>
+        <h3 class="product-name">{{ products[1].name }}</h3>
+        <p class="product-desc">{{ products[1].description }}</p>
+        <button class="btn-outline">Ver más</button>
+      </article>
+
+      <!-- Card 3: Blanqueamiento -->
+      <article class="product-card">
+        <div class="card-badge new-badge">{{ products[2].tag }}</div>
+        <canvas #canvas3 class="product-canvas" width="280" height="280"></canvas>
+        <h3 class="product-name">{{ products[2].name }}</h3>
+        <p class="product-desc">{{ products[2].description }}</p>
+        <button class="btn-outline">Ver más</button>
+      </article>
+
+    </div>
+  </div>
+</section>

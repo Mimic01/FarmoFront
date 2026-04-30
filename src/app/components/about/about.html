@@ -1,0 +1,38 @@
+<section id="about" class="about">
+  <div class="about-container">
+
+    <!-- Stats grid -->
+    <div class="stats-side">
+      <div class="stats-grid">
+        @for (stat of stats; track stat.value) {
+          <div class="stat-card">
+            <span class="stat-value">{{ stat.value }}</span>
+            <span class="stat-label">{{ stat.label }}</span>
+          </div>
+        }
+      </div>
+    </div>
+
+    <!-- Text content -->
+    <div class="text-side">
+      <p class="section-tag">Quiénes somos</p>
+      <h2>Liderando la innovación<br>dental en Canarias</h2>
+      <p class="about-body">
+        Farmodental nació en Las Palmas de Gran Canaria con la misión de llevar los avances
+        más recientes en odontología a las clínicas y profesionales del archipiélago canario
+        y de toda España.
+      </p>
+      <p class="about-body">
+        Nos enorgullecemos de trabajar exclusivamente con fabricantes certificados, garantizando
+        estándares de calidad europeos en cada producto de nuestro catálogo: desde implantes
+        de última generación hasta kits de higiene profesional.
+      </p>
+      <div class="about-badges">
+        <span class="badge">Certificado ISO 13485</span>
+        <span class="badge">Distribución Oficial UE</span>
+        <span class="badge">Soporte 24/7</span>
+      </div>
+    </div>
+
+  </div>
+</section>

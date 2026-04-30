@@ -1,0 +1,24 @@
+<nav class="navbar" [class.scrolled]="scrolled">
+  <div class="nav-container">
+    <a href="#" class="logo">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M14 2C10.5 2 8 4 7 6.5C6.5 7.8 6.2 9.2 6 10.5C5.6 13 5.5 15.5 6 17.8C6.8 21.2 8.5 24.5 10.5 25.5C11.5 26 12.5 25.5 13 24.5L14 21L15 24.5C15.5 25.5 16.5 26 17.5 25.5C19.5 24.5 21.2 21.2 22 17.8C22.5 15.5 22.4 13 22 10.5C21.8 9.2 21.5 7.8 21 6.5C20 4 17.5 2 14 2Z" fill="#3EC6C6"/>
+        <path d="M10 8C9 9 8.5 10.5 8.5 12C8.5 14 9.5 15.5 11 16C11.8 16.3 12.6 16.1 13.3 15.6C13.6 15.4 13.8 15.1 14 14.8C14.2 15.1 14.4 15.4 14.7 15.6C15.4 16.1 16.2 16.3 17 16C18.5 15.5 19.5 14 19.5 12C19.5 10.5 19 9 18 8C17 7 15.7 6.5 14 6.5C12.3 6.5 11 7 10 8Z" fill="#1B2A4A"/>
+      </svg>
+      <span>Farmodental</span>
+    </a>
+
+    <ul class="nav-links" [class.open]="menuOpen">
+      <li><a href="#" (click)="menuOpen=false">Inicio</a></li>
+      <li><a href="#about" (click)="menuOpen=false">Nosotros</a></li>
+      <li><a href="#products" (click)="menuOpen=false">Productos</a></li>
+      <li><a href="#contact" (click)="menuOpen=false">Contacto</a></li>
+    </ul>
+
+    <button class="hamburger" (click)="menuOpen=!menuOpen" [class.active]="menuOpen" aria-label="Menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>

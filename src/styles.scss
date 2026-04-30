@@ -1,0 +1,126 @@
+/* ===================================================
+   Farmodental – Global Styles
+   =================================================== */
+
+:root {
+  --color-navy:    #1B2A4A;
+  --color-white:   #FFFFFF;
+  --color-teal:    #3EC6C6;
+  --color-teal-dk: #2da8a8;
+  --color-muted:   #7A8BA0;
+  --color-bg-light: #f8fafc;
+  --color-bg-mid:   #eef2f8;
+  --color-border:   #dde3eb;
+
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body:    'Inter', sans-serif;
+
+  --shadow-sm: 0 2px 8px rgba(27, 42, 74, 0.08);
+  --shadow-md: 0 4px 24px rgba(27, 42, 74, 0.12);
+  --shadow-lg: 0 8px 48px rgba(27, 42, 74, 0.16);
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  --transition: 0.25s ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--color-navy);
+  background-color: var(--color-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-navy);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+/* ── Utility classes ── */
+.text-teal   { color: var(--color-teal); }
+.text-muted  { color: var(--color-muted); }
+.text-center { text-align: center; }
+
+.btn-primary {
+  display: inline-block;
+  background: var(--color-teal);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 14px 32px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+
+  &:hover {
+    background: var(--color-teal-dk);
+    transform: translateY(-1px);
+  }
+}
+
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: var(--color-teal);
+  border: 2px solid var(--color-teal);
+  border-radius: var(--radius-sm);
+  padding: 10px 24px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+
+  &:hover {
+    background: var(--color-teal);
+    color: var(--color-white);
+  }
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-teal);
+  margin-bottom: 12px;
+}
